@@ -60,7 +60,7 @@ app.post('/remove-from-cart', (req, res) => {
 
 
 // setting upserver on port 3000
-const port = 3000;
+const port = process.env.PORT;
 app.listen(port, () => {
     const url = `http://localhost: ${port}`
     console.log(`The server is running on port 3000`);
